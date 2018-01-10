@@ -1,2 +1,2 @@
-C:\_Src\HoloLens\HoloLensIRAD\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
-C:\_Src\HoloLens\HoloLensIRAD\App\HoloLensIRAD\HoloLensIRAD.csproj;x86
+D:\Develop\test\TempAR\App\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+D:\Develop\test\TempAR\App\HoloLensIRAD\HoloLensIRAD.csproj;x86

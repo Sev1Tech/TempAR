@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: Aeur/oX/////AAAAGe7l4hjBDUsskJKRrLgywH867RfhZx8ZnS1gF5wLp6W2yKz9BcHxdwmpuDgnVVzOM4EiMl6532Wmd92ggedhrBNTeBhFCD5dmijUcHqitFsmFx1itqMrnsUWxYnRmbuA1qIQI/vYE8mhlNGNPFDOAkIHV46gaLQZ2iNvUn0fRdyGFp0JkJPztx1ojMm3tITGmaBK1npSXLc+IDcYkppxaDo66UCfH08cqY1c5TaYTDpEIgPTRd3KqoUzblKvWh29FnFi76jpgR0VfJhqwE0JkJQIeFJTBHSpUDC87yCwMSV7ZhKbtg7lwXUwbZ/C0WVXUT8mmwicOB7LAwiYjSkS87Bxh+K0bJogVnn/sJwJKkr5
+    vuforiaLicenseKey: ATEXejn/////AAAAmarBym+BeUuDosJlIgUTAFBmIsOTX3WsRjtwGf2vN2K6n5HG1+8L3BbEtG6yepJyaqRoc/ftyyg/CxpdoJceUL3L6Ypa8OOgROmOXcmseWw6JMQVuEbcV83Y9YaPd0aru/WFMu1pvdDjvVTeTc6u5N9O9miU9uhXXfOtOf9CKye0+Xgssl+vN8DfyLpdrOQACESMBSt7z3Fq7IaIf+1H+KxhqB1sQMVgf30iXsdnUMie0Y5VzEK3PNlcGFg1pkl74OnDKrFdjAy8hfXwbypEdUzGRIMsVfJnkzspJYuO7ij0DFZOsL9hfLi94Sb46opxLe+ZbrpbKIPS7ac2cWlhxALRQOiFh7z+xUwzewUe86la
     ufoLicenseKey: QWJUV05ibi8vLy8vQUFBQUtKYXB2blBwbFVObGtiVFRGTld6RGRaQTk1WG9MTE5xNDhKZjdjRzd4MnR2UWMzb0daaEtkcHU1WWdHam54ZUxmN3dWSlpTRDc5UmdmckhjckhtTzFaVlZMU1VzUlY2V1lnMThsZCswbVV5RmhNS1dhZ3VFTU5ZSjhOSGpISlZTUDVUZ3pWd3QrQytyQUthUE93aUFqaFZsdWJ4ZWFaL01YeUVYSlBoYStsTTRCZUt3UFlna29GUXBvaUpKeEt3YXJxTFlJSTdVdHFQT2lLVHVOYWlzeS9mRWtqbXdHMnNjU2ptWDlMYm5aeGFoRldLciswWlpRTkc1ams0M3piT3RLWlZabStnbmFGdVFwUUlyMFgyZWd6LzNENktsaHdpZWlYeVBzN1hUckh4SnRta0FUdnRTaGFIWWR2Y0M5VXRjQ3U3UlBwd2ptNEFnVTUyZ3U1SFYrbkZ1MkJSeUtWNHU1NmJRdFBISXJnZWg=
     delayedInitialization: 0
     cameraDeviceModeSetting: -1
@@ -44,9 +44,9 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
-    - HoloVuforiaDb
+    - TempARDB
     dataSetsToActivate:
-    - HoloVuforiaDb
+    - TempARDB
   videoBackground:
     clippingMode: 0
     numDivisions: 2
@@ -54,19 +54,17 @@ MonoBehaviour:
       type: 0}
     matteShader: {fileID: 15310, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
-  smartTerrainTracker:
-    autoInitTracker: 0
-    autoStartTracker: 0
-    autoInitBuilder: 0
-    sceneUnitsToMillimeter: 1000
   deviceTracker:
     autoInitTracker: 0
     autoStartTracker: 0
-    trackingMode: 0
+    trackingMode: 1
     posePrediction: 0
     modelCorrectionMode: 0
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
+  smartTerrain:
+    autoInitTracker: 0
+    autoStartTracker: 0
   webcam:
     deviceNameSetInEditor: Logitech Camera
     flipHorizontally: 0

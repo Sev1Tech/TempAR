@@ -1,3 +1,4 @@
+WinMetadata\Windows.winmd
 Assets\SplashScreen.scale-200.png
 Assets\Square150x150Logo.scale-200.png
 Assets\Square44x44Logo.scale-200.png
@@ -19,8 +20,12 @@ Data\sharedassets0.assets
 Data\sharedassets0.assets.resS
 Data\StreamingAssets\Vuforia\HoloVuforiaDb.dat
 Data\StreamingAssets\Vuforia\HoloVuforiaDb.xml
+Data\StreamingAssets\Vuforia\TempARDB.dat
+Data\StreamingAssets\Vuforia\TempARDB.xml
 Data\StreamingAssets\Vuforia\VuforiaMars_Images.dat
 Data\StreamingAssets\Vuforia\VuforiaMars_Images.xml
+Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.dat
+Data\StreamingAssets\Vuforia\VuforiaMars_ModelTarget.xml
 Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.dat
 Data\StreamingAssets\Vuforia\VuforiaMars_Object_OT.xml
 Data\StreamingAssets\Vuforia\VuforiaMars_VuMark.dat
@@ -29,4 +34,3 @@ Properties\Default.rd.xml
 Resource.res
 Vuforia.dll
 VuforiaWrapper.dll
-WinMetadata\Windows.winmd

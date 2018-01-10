@@ -1,0 +1,2 @@
+D:\Develop\test\TempAR\TestJohn\GeneratedProjects\UWP\Assembly-CSharp\Assembly-CSharp.csproj;x86
+D:\Develop\test\TempAR\TestJohn\HoloLensIRAD\HoloLensIRAD.csproj;x86

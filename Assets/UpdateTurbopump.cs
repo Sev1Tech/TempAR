@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 
 public class UpdateTurbopump : MonoBehaviour
 {
-    public string pressureURL = "http://54.234.173.6:8181/sensorhub/ngfrsos?service=SOS&version=2.0&request=GetResult&offering=urn:osh:sensor:sensehat:2b4693cf-sos&observedProperty=http://sensorml.com/ont/swe/property/AtmosphericPressure&temporalFilter=phenomenonTime,now&responseFormat=application/json";
+    public string pressureURL = "http://52.21.6.62:8181/sensorhub/ngfrsos?service=SOS&version=2.0&request=GetResult&offering=urn:osh:sensor:sensehat:2b4693cf-sos&observedProperty=http://sensorml.com/ont/swe/property/AtmosphericPressure&temporalFilter=phenomenonTime,now&responseFormat=application/json";
     private string myData = "";
 
     // Use this for initialization
@@ -34,7 +34,7 @@ public class UpdateTurbopump : MonoBehaviour
 
             double pressure = Convert.ToDouble(json[0].ToString());
 
-            GetComponent<TextMesh>().text = "P: " + pressure.ToString("0.00");
+            GetComponent<TextMesh>().text = "Pressure \n " + pressure.ToString("0.00") + " mb";
 
             // TODO: We would need 3 seperate labels to color code the individual items.
 

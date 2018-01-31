@@ -218,7 +218,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: turbopumpMaterial
+  m_Name: pressMaterial
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -231,7 +231,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: acd4d01428ba4cd69acfcc14aa704c1c, type: 3}
+        m_Texture: {fileID: 2800000, guid: e9831c1ef97c40f3a1827d07921baa5f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []
@@ -254,7 +254,7 @@ Mesh:
     vertexCount: 4
     localAABB:
       m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0.38868883, y: 0, z: 0.5}
+      m_Extent: {x: 0.5, y: 0, z: 0.49635}
   m_Shapes:
     vertices: []
     shapes: []
@@ -307,7 +307,7 @@ Mesh:
       format: 0
       dimension: 0
     m_DataSize: 128
-    _typelessdata: 3902c7be00000000000000bf000000000000803f0000000000000000000000003902c7be000000000000003f000000000000803f00000000000000000000803f3902c73e00000000000000bf000000000000803f000000000000803f000000003902c73e000000000000003f000000000000803f000000000000803f0000803f
+    _typelessdata: 000000bf000000009621febe00000000ffff7f3f000000000000000000000000000000bf000000009621fe3e00000000ffff7f3f00000000000000000000803f0000003f000000009621febe00000000ffff7f3f000000000000803f000000000000003f000000009621fe3e00000000ffff7f3f000000000000803f0000803f
   m_CompressedMesh:
     m_Vertices:
       m_NumItems: 0
@@ -367,6 +367,221 @@ Mesh:
   m_BakedConvexCollisionMesh: 
   m_BakedTriangleCollisionMesh: 
   m_MeshOptimized: 0
+--- !u!1 &899047871
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 899047872}
+  - component: {fileID: 899047875}
+  - component: {fileID: 899047874}
+  - component: {fileID: 899047873}
+  m_Layer: 0
+  m_Name: SensorLabel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &899047872
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899047871}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalPosition: {x: 0.6, y: 0.3, z: 0.1}
+  m_LocalScale: {x: 0.075, y: 0.075, z: 0.075}
+  m_Children: []
+  m_Father: {fileID: 1046029993}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!114 &899047873
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899047871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cced18001bbe4744c902612c298f9273, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pressureURL: http://52.21.6.62:8181/sensorhub/ngfrsos?service=SOS&version=2.0&request=GetResult&offering=urn:osh:sensor:sensehat:2b4693cf-sos&observedProperty=http://sensorml.com/ont/swe/property/Humidity&temporalFilter=phenomenonTime,now&responseFormat=application/json
+--- !u!102 &899047874
+TextMesh:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899047871}
+  m_Text: Target Detected
+  m_OffsetZ: 0
+  m_CharacterSize: 1
+  m_LineSpacing: 1
+  m_Anchor: 5
+  m_Alignment: 2
+  m_TabSize: 4
+  m_FontSize: 10
+  m_FontStyle: 0
+  m_RichText: 1
+  m_Font: {fileID: 12800000, guid: 6e4a1744cf113994799d3e46a7c45d99, type: 3}
+  m_Color:
+    serializedVersion: 2
+    rgba: 4293650937
+--- !u!23 &899047875
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 899047871}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 6e4a1744cf113994799d3e46a7c45d99, type: 3}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!1 &1046029987
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1046029993}
+  - component: {fileID: 1046029992}
+  - component: {fileID: 1046029991}
+  - component: {fileID: 1046029990}
+  - component: {fileID: 1046029989}
+  - component: {fileID: 1046029988}
+  m_Layer: 0
+  m_Name: Humidity
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!33 &1046029988
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046029987}
+  m_Mesh: {fileID: 825174206}
+--- !u!23 &1046029989
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046029987}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2144533134}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!114 &1046029990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046029987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1770992566, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1046029991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046029987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a917f0af64a6423093132dab321c15f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1046029992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046029987}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mTrackableName: humidity
+  mPreserveChildSize: 0
+  mInitializedInEditor: 1
+  mDataSetPath: Vuforia/TempARDB.xml
+  mExtendedTracking: 1
+  mAspectRatio: 1
+  mImageTargetType: 0
+  mWidth: 0.25
+  mHeight: 0.25
+--- !u!4 &1046029993
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1046029987}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
+  m_Children:
+  - {fileID: 899047872}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070805130
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +624,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1faba33a24d9a8b459dbcf5627f878af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  temperatureURL: http://54.234.173.6:8181/sensorhub/ngfrsos?service=SOS&version=2.0&request=GetResult&offering=urn:osh:sensor:sensehat:2b4693cf-sos&observedProperty=http://sensorml.com/ont/swe/property/AirTemperature&temporalFilter=phenomenonTime,now&responseFormat=application/json
+  temperatureURL: http://52.21.6.62:8181/sensorhub/ngfrsos?service=SOS&version=2.0&request=GetResult&offering=urn:osh:sensor:sensehat:2b4693cf-sos&observedProperty=http://sensorml.com/ont/swe/property/AirTemperature&temporalFilter=phenomenonTime,now&responseFormat=application/json
 --- !u!102 &1070805133
 TextMesh:
   serializedVersion: 3
@@ -525,15 +740,15 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: turbopump
+  mTrackableName: press
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TempARDB.xml
   mExtendedTracking: 0
-  mAspectRatio: 0.486632
+  mAspectRatio: 1
   mImageTargetType: 0
   mWidth: 0.25
-  mHeight: 0.121658
+  mHeight: 0.25
 --- !u!4 &1226709816
 Transform:
   m_ObjectHideFlags: 0
@@ -679,7 +894,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e3403c1e6919544baf583455e6feb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pressureURL: http://54.234.173.6:8181/sensorhub/ngfrsos?service=SOS&version=2.0&request=GetResult&offering=urn:osh:sensor:sensehat:2b4693cf-sos&observedProperty=http://sensorml.com/ont/swe/property/AtmosphericPressure&temporalFilter=phenomenonTime,now&responseFormat=application/json
+  pressureURL: http://52.21.6.62:8181/sensorhub/ngfrsos?service=SOS&version=2.0&request=GetResult&offering=urn:osh:sensor:sensehat:2b4693cf-sos&observedProperty=http://sensorml.com/ont/swe/property/AtmosphericPressure&temporalFilter=phenomenonTime,now&responseFormat=application/json
 --- !u!1 &1722438126
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,15 +1135,15 @@ MonoBehaviour:
   m_Script: {fileID: -1631628248, guid: 1e108ae5f2133934f948edded555f03e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mTrackableName: secondary
+  mTrackableName: temp
   mPreserveChildSize: 0
   mInitializedInEditor: 1
   mDataSetPath: Vuforia/TempARDB.xml
   mExtendedTracking: 1
-  mAspectRatio: 1.286376
+  mAspectRatio: 0.9927
   mImageTargetType: 0
   mWidth: 0.25
-  mHeight: 0.321594
+  mHeight: 0.248175
 --- !u!4 &1953126906
 Transform:
   m_ObjectHideFlags: 0
@@ -937,7 +1152,7 @@ Transform:
   m_GameObject: {fileID: 1953126900}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.321594, y: 0.321594, z: 0.321594}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 0.25}
   m_Children:
   - {fileID: 1070805131}
   m_Father: {fileID: 0}
@@ -949,7 +1164,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: secondaryMaterial
+  m_Name: humidityMaterial
   m_Shader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 5
@@ -962,7 +1177,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 635b5404d84444f4b977382a738dc005, type: 3}
+        m_Texture: {fileID: 2800000, guid: a305e252a70f4dcaa040550fa002dd89, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats: []

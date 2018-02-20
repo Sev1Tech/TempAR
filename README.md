@@ -23,6 +23,9 @@ Following [this Microsoft guide](https://developer.microsoft.com/en-us/windows/m
 * **Optional:* [HoloLens Emulator and Holographic Templates](https://go.microsoft.com/fwlink/?linkid=852626)
   * **Your system must support Hyper-V** for the Emulator installation to succeed
 
+Incidental - Vuforia Database 
+A vuforia database and license key is included in this project.  If you wish to create your own images, you will need to go to : https://developer.vuforia.com/ and sign-up / in and create a new database.  Once created with images that Vuforia deems accaptable the it can be downloaded as a Unity generic package and imported into the Unity system.  Once there you can assign those images for action once reconized.  For access to the database that is included, please contact John Craft (john.craft@geocent.com) for those access credentials.
+
 ## Deployment
 
 ### Export to the Visual Studio Solution
